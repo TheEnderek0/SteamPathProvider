@@ -6,8 +6,6 @@ add_executable(SteamPathProvider src/main.cpp)
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/include/SpeedyKeyV")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/include/SteamAppPathProvider")
 
-target_link_libraries(SteamPathProvider INTERFACE keyvalues)
-target_link_libraries(SteamPathProvider INTERFACE sapp)
+target_link_libraries(SteamPathProvider PUBLIC keyvalues sapp)
 
-target_include_directories(SteamPathProvider PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/SteamAppPathProvider/include" )
-target_include_directories(SteamPathProvider PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/SpeedyKeyV" )
+target_include_directories(SteamPathProvider PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/SteamAppPathProvider/include" "${CMAKE_CURRENT_SOURCE_DIR}/include/SpeedyKeyV")
