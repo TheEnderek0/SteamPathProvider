@@ -1,11 +1,8 @@
-cmake_minimum_required(VERSION 3.15)
-project(SteamPathProvider)
+cmake_minimum_required(VERSION 3.20)
+project(SteamPathProvider CXX)
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(SteamPathProvider src/main.cpp)
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/include/SpeedyKeyV")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/include/SteamAppPathProvider")
+add_executable(SteamPathProvider src/main.cpp)
 
-target_link_libraries(SteamPathProvider PUBLIC keyvalues sapp)
-
-target_include_directories(SteamPathProvider PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/SteamAppPathProvider/include" "${CMAKE_CURRENT_SOURCE_DIR}/include/SpeedyKeyV")
+target_link_libraries(SteamPathProvider PUBLIC SAPP)
