@@ -1,6 +1,3 @@
-[submodule "include/SpeedyKeyV"]
-	path = include/SpeedyKeyV
-	url = https://github.com/ozxybox/SpeedyKeyV.git
 [submodule "include/SteamAppPathProvider"]
 	path = include/SteamAppPathProvider
 	url = https://github.com/Trico-Everfire/SteamAppPathProvider.git
