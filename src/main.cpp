@@ -27,6 +27,7 @@ int main(int argc, char* argv[]) {
 		string path = "";
 		provider.GetAppInstallDir(appid, path);
 		cout << path;
+        cout.flush();
 		return 0;
 	}
 	else {
