@@ -1,5 +1,5 @@
 #include <iostream>
-#include <sapp/SteamAppPathProvider.h>
+#include "./../include/SteamAppPathProvider/include/sapp/SteamAppPathProvider.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 		try {
 			appid = stoi(argv[1]);
 		}
-		catch (exception err) {
+		catch (exception &err) {
 			return 3;
 		}
 	}
@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
 
 	if (provider.BIsAppInstalled(appid)) {
 		string path = "";
-		provider.GetAppInstallDir(appid, path, 0);
+		provider.GetAppInstallDir(appid, path);
 		cout << path;
 		return 0;
 	}
