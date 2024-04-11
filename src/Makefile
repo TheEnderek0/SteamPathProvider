@@ -1,4 +1,4 @@
 CC = g++
 
 all: main.cpp
-	g++ main.cpp -o SteamPathProvider.exe
+	g++ main.cpp -std=c++23 -o SteamPathProvider.exe

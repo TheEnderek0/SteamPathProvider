@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	if (provider.BIsAppInstalled(appid)) {
-		string path = "";
+		string path;
 		provider.GetAppInstallDir(appid, path);
 		cout << path;
         cout.flush();
