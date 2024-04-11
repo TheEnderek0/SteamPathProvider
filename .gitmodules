@@ -1,3 +1,0 @@
-[submodule "include/SteamAppPathProvider"]
-	path = include/SteamAppPathProvider
-	url = https://github.com/Trico-Everfire/SteamAppPathProvider.git
