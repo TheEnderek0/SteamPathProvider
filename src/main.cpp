@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	SteamAppPathProvider provider = SteamAppPathProvider(true, true);
+	SteamAppPathProvider provider = SteamAppPathProvider(false, false);
 	int appid = 0;
 
 	if (argc < 2) {
