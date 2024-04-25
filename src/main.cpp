@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	SteamAppPathProvider provider = SteamAppPathProvider(true, false);
+	SteamAppPathProvider provider = SteamAppPathProvider(true, true);
 	int appid = 0;
 
 	if (argc < 2) {
@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 		string path;
 		provider.GetAppInstallDir(appid, path);
 		cout << path;
-        cout.flush();
+        	cout.flush();
 		return 0;
 	}
 	else {
