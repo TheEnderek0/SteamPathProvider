@@ -1,6 +1,6 @@
 .vs
 out
-cmake*
+cmake-build*
 .idea
 .vscode
 *.exe
